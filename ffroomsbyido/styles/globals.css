@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.outer-box{
+  border:1px solid #3a3a7b;
+  padding:2%;
+  width:50%;
+  text-align:center;
+}
+
+
+
+
+.btn-group button {
+	background-color: #3a3a7b;
+    border: 1px solid #3a3a7b;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+}
+.column {
+  float: left;
+  width: 50%;
+}
