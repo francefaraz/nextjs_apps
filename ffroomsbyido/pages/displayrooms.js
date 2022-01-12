@@ -9,13 +9,12 @@ export default function displayrooms(posts) {
     console.log("hello"+JSON.stringify(posts))
     return (
         <div>
-            <h1>hello welcome home</h1>
+            <h1>Hi welcome to FF ROOMS BY IDO</h1>
       {posts.posts?.map((post) => {
     
              return(
 
                 <div className="outer-box" key={post._id}>
-
                 <div className="row">
                 <div className="column">
                     {console.log(post.roomId)}
@@ -37,6 +36,7 @@ export default function displayrooms(posts) {
                 <button>Share</button>
                 </div>
                 </div>
+              
              );
              })}
    
