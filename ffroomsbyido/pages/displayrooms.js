@@ -2,7 +2,10 @@
 
 // import  { useState, useEffect } from "react";
 // import Axios from 'axios';
-
+const myStyle={
+  backgroundImage: 
+"url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
+};
 
 
 export default function displayrooms(posts) {
@@ -13,11 +16,12 @@ export default function displayrooms(posts) {
     }
     return (
         <div>
+          <div style={myStyle}> 
             <h1>Hi welcome to FF ROOMS BY IDO</h1>
       {posts.posts?.map((post) => {
     
              return(
-
+               
                 <div className="outer-box" key={post._id}>
                 <div className="row">
                 <div className="column">
@@ -42,8 +46,8 @@ export default function displayrooms(posts) {
                 </div>
               
              );
-             })}
-   
+             })}  
+             </div>      
         </div>
     )
 }
