@@ -7,6 +7,10 @@
 
 export default function displayrooms(posts) {
     console.log("hello"+JSON.stringify(posts))
+    function getPassword(id){
+      console.log("hiee",id)
+      
+    }
     return (
         <div>
             <h1>Hi welcome to FF ROOMS BY IDO</h1>
@@ -31,7 +35,7 @@ export default function displayrooms(posts) {
                 <div style={{marginBottom:'5%',marginTop:'5%',textAlign:'center',fontWeight:'bold',}}>Match Time : {post.matchtime}</div>
                 <div className="btn-group" 
                 style={{textAlign:"center"}} >
-                <button>Get Password</button>
+                <button onClick={()=>{getPassword(post.roomId)}}>Get Password</button>
                 <button>Spectate - YT</button>
                 <button>Share</button>
                 </div>
